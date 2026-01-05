@@ -161,14 +161,14 @@ function handleMouseMove(event: MouseEvent) {
       :src="backgroundImagePath"
     >
 
-    <canvas id="live2dCanvas" />
-
     <img
       v-for="path in modelStore.pressedKeys"
       :key="path"
       class="object-cover"
       :src="convertFileSrc(path)"
     >
+
+    <canvas id="live2dCanvas" />
 
     <div
       v-show="resizing"
